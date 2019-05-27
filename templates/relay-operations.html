@@ -1,0 +1,23 @@
+<div class="container py-5">
+  <div class="row py-5">
+    <div class="col-8">
+      {{ this.body }}
+    </div>
+    <div class="col-4 bg-light">
+      <p>Illustration area</p>
+    </div>
+  </div>
+  <div class="row py-5">
+    {% for child in this.children|sort(attribute='key') %}
+      <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-4">
+        <div class="card h-100 border-0">
+          <div class="card-body">
+            <h4 class="text-primary">.{{ child.key }}</h4>
+            <h4 class="card-title text-primary"><a href="{{ child.path|url }}">{{ child.title }}</a></h4>
+            <p class="card-text">{{ child.subtitle }}</p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

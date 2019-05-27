@@ -1,0 +1,17 @@
+section: localization
+---
+section_id: localization
+---
+color: primary
+---
+_template: layout.html
+---
+title: Pick a project
+---
+subtitle: How to find things ... 
+---
+key: 3
+---
+html: localization.html
+---
+body:

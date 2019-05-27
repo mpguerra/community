@@ -6,12 +6,18 @@ color: primary
 ---
 _template: layout.html
 ---
-title: Join the Tor Community
+title: Localization
 ---
-subtitle: We want Tor to work for everyone in the world, which means a lot of languages. Will you help us to translate?
+subtitle: We want Tor to work for everyone in the world, which means a lot of languages.
+---
+cta: Will you help us to translate?
 ---
 key: 5
 ---
 html: localization.html
 ---
 body:
+
+In order for Tor to work for everyone, it needs to speak everyone's languages.
+Our volunteer translation team works hard to make this a reality, and we can always use more help.
+Our current translation priorities are translating the [Tor Browser](https://torpat.ch/locales), its documentation and the [Tor Project website](https://torpat.ch/tpo-locales), and there are always other documents to translate.
