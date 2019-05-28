@@ -24,7 +24,12 @@ locale = de
 name = English (en)
 primary = yes
 url_prefix = /
-locale = en-US
+locale = en
+
+[alternatives.de]
+name = Deutsch (de)
+url_prefix = /de/
+locale = de
 
 [alternatives.es]
 name = Español (es)
@@ -36,10 +41,20 @@ name = Français (fr)
 url_prefix = /fr/
 locale = fr
 
+[alternatives.it]
+name = Italia (it)
+url_prefix = /it/
+locale = it
+
 [alternatives.pt-BR]
 name = Português (Brasil)
 url_prefix = /pt-BR/
 locale = pt-BR
+
+[alternatives.ru]
+name = Русский (ru)
+url_prefix = /ru/
+locale = ru
 
 [alternatives.tr]
 name = Türkçe (tr)
@@ -50,3 +65,5 @@ locale = tr
 name = 简体字 (zh-CN)
 url_prefix = /zh-CN/
 locale = zh-CN
+
+
