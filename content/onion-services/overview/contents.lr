@@ -4,21 +4,19 @@ section_id: onion-services
 ---
 color: primary
 ---
-image: cloud-upload-alt
----
 _template: layout.html
 ---
 title: How do .onion Services work?
 ---
 subtitle: Learn how .onion services work.
 ---
-key: 1
+key: 0
 ---
 html: onion-services.html
 ---
 body:
 
-
+Onion services are services that can only be accessed over Tor. Running an onion service gives your users all the security of HTTPS with the added privacy benefits of Tor Browser.
 
 ## Why onion services?
 
