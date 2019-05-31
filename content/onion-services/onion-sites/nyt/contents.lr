@@ -1,0 +1,13 @@
+_model: onion-site
+---
+_hidden: yes
+---
+org: The New York Times
+---
+onion_site: https://www.nytimes3xbfgragh.onion
+---
+logo: nyt.png
+---
+description:
+
+The New York Times is an American newspaper based in New York City with worldwide influence and readership.
