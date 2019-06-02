@@ -4,10 +4,12 @@
     <div class="col-8">
       {{ this.body }}
     </div>
-    <div class="col-4">
+    <div class="col-4 bg-light">
+      <div class="illo-container">
+        <img src="/static/images/home/svg/{{ this.section_id }}.png" class="img-fluid" alt="{{ this.section }}" />
+      </div>
     </div>
   </div>
-  <h2 class="text-primary">{{ _('Help us translate') }}</h2>
   <div class="row">
     {% for child in this.children|sort(attribute='key') %}
       <div class="col-sm-4 col-md-4 col-sm-12 col-xl-4 py-4">
