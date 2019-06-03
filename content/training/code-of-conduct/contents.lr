@@ -1,0 +1,21 @@
+section: Training
+---
+section_id: training
+---
+color: primary
+---
+_template: layout.html
+---
+title: Code of Conduct for Trainers
+---
+subtitle: Don't be a jerk. Be awesome instead.
+---
+cta: Check our resources
+---
+key: 3
+---
+html: training.html
+---
+body:
+
+[Code of Conduct](https://gitweb.torproject.org/community/policies.git/tree/code_of_conduct.txt)
