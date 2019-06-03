@@ -5,21 +5,37 @@
       {{ this.body }}
     </div>
     <div class="col-4 bg-light">
-      <p>Illustration area</p>
-    </div>
+      <div class="illo-container">
+        <img src="/static/images/home/svg/{{ this.section_id }}.svg" class="img-fluid" alt="{{ this.section }}" />
+      </div>
   </div>
-
+  <div class="row">
+    {% for child in this.children|sort(attribute='key') %}
+      {% if child.key != '0' %}
+      <div class="col-sm-4 col-md-4 col-sm-12 col-xl-4 py-4">
+        <div class="card h-100 border-0">
+          <div class="card-body">
+            <div class="card-body">
+              <h4 class="card-title text-primary"><a href="{{ child.path|url }}">{{ _(child.title) }}</a></h4>
+              <p class="card-text">{{ _(child.subtitle) }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
   <div class="row py-5">
-    <h2 class="text-primary text-center mx-auto"><u>{{ _('Resources') }}</u>
-    </h2>
+    <a href="{{ this.path|url }}resources/"><h2 class="text-primary text-center mx-auto"><u>{{ _('Resources') }}</u>
+    </h2></a>
   </div>
   <div class="row py-5 text-center mx-auto">
     <h2 class="display-4 text-primary text-center mx-auto">{{ _('Join the Community') }}</h2>
     <p class="text-center">
-      {{ _('Are you interested in inviting someone from Tor to train your group? While we receive a high volume of training requests and may not be able to offer an in-person training, we may still be able to help. Contact the community team and let\'s talk [link to contact].')}}
+      {{ _('Are you interested in inviting someone from Tor to train your group? While we receive a high volume of training requests and may not be able to offer an in-person training, we may still be able to help. Contact the [community team](mailto:tor-community-team@lists.torproject.org) and let\'s talk.')}}
     </p>
-    <h3 class="text-primary text-center mx-auto"><u>{{ _('Call to action') }}
-      <i class="fas fa-arrow-right"></i></u>
+    <h3 class="text-primary text-center mx-auto"><u><a href="https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-teachers">{{ _('Sign up to be a trainer') }}
+      <i class="fas fa-arrow-right"></i></a></u>
     </h3>
   </div>
 </div>
