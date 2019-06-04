@@ -35,8 +35,8 @@ For more information on hosting providers and their policies on allowing Tor rel
 * Does the hoster provide IPv6 connectivity? (it is recommended, but not required)
 * What virtualization / hypervisor (if any) does the provider use? (anything but OpenVZ should be fine)
 * Does the hoster start to throttle bandwidth after a certain amount of traffic?
-* How well connected is the autonomous system of the hoster? To answer this question you can use the AS rank of the autonomous systems if you want to
-compare: http://as-rank.caida.org/ (a lower value is better)
+* How well connected is the autonomous system of the hoster?
+  To answer this question you can use the AS rank of the autonomous systems if you want to compare: http://as-rank.caida.org/ (a lower value is better)
 
 ## If you plan to run Exit Relays
 
@@ -98,7 +98,7 @@ These steps are intended for the latest stable version of the given OS, on Ubunt
 
 Note: For some operating systems, there are alpha version packages available (tor versions with new features not deemed to be stable yet).
 These are only recommended for people eager to test and report bugs in bleeding edge releases/features.
-If you are looking to run a relay with minimal effort we recommend you stick to stable releases.
+If you are looking to run a relay with minimal effort, we recommend you stick to stable releases.
 
 In this guide we describe how to setup a new non-exit relay.
 By reading further you can easily switch to become an exit relay.
@@ -240,7 +240,8 @@ Manually managing MyFamily for big relaygroups is error prone and can put Tor cl
 
 # Exit Relay Configuration
 
-It is recommended that you setup exit relays on servers dedicated to this purpose. It is not recommended to install Tor exit relays on servers that you need for other services as well.
+It is recommended that you setup exit relays on servers dedicated to this purpose.
+It is not recommended to install Tor exit relays on servers that you need for other services as well.
 Do not mix your own traffic with your exit relay traffic.
 
 ## Reverse DNS and WHOIS record
